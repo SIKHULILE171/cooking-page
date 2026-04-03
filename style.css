@@ -1,0 +1,250 @@
+/* ============================================
+   MY COOKING PAGE - CSS STYLESHEET
+   ============================================ */
+
+/* 1. BODY */
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #faf8f5;
+    background-image: 
+        radial-gradient(#e8e4dc 1px, transparent 1px),
+        radial-gradient(#e8e4dc 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    color: #3d3d3d;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+/* 2. MAIN HEADING */
+h1 {
+    color: #c75b39;
+    font-size: 38px;
+    text-align: center;
+    margin: 30px 0 10px 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+h1::after {
+    content: "🍳";
+    display: block;
+    font-size: 24px;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+/* 3. SUBHEADINGS */
+h2 {
+    color: #5a7d5a;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed #c4b7a6;
+    font-weight: normal;
+    font-style: italic;
+}
+
+h3 {
+    color: #8b6b4a;
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: normal;
+}
+
+/* 4. PARAGRAPHS */
+p {
+    color: #4a4a4a;
+    margin: 15px 0;
+    text-align: left;
+}
+
+/* 5. HEADER */
+header {
+    background: linear-gradient(to bottom, #fff9f0, #faf8f5);
+    padding: 40px 20px 30px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e0d5c7;
+}
+
+header p {
+    color: #7a6b5a;
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* 6. NAVIGATION */
+nav {
+    background-color: #f5f0e8;
+    padding: 12px 0;
+    border-bottom: 2px solid #e0d5c7;
+    border-top: 1px solid #e0d5c7;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+nav ul li a {
+    color: #6b5b4f;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    background-color: #c75b39;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 7. MAIN CONTENT */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 8. SECTIONS */
+section {
+    margin: 30px 0;
+    padding: 25px 30px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 
+        0 1px 3px rgba(0,0,0,0.05),
+        0 0 0 1px rgba(0,0,0,0.03);
+    position: relative;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0 20px 20px 0;
+    border-style: solid;
+    border-color: #f0ebe3 #faf8f5;
+    box-shadow: -2px 2px 2px rgba(0,0,0,0.05);
+}
+
+/* 9. IMAGE */
+img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border: 8px solid white;
+    box-shadow: 
+        0 4px 6px rgba(0,0,0,0.1),
+        0 0 0 1px rgba(0,0,0,0.05);
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+/* 10. ARTICLE */
+article {
+    background-color: #fdfcfa;
+    padding: 20px 25px;
+    margin: 20px 0;
+    border-left: 3px solid #c75b39;
+    border-radius: 0 4px 4px 0;
+}
+
+article header {
+    background: none;
+    border: none;
+    padding: 0;
+    text-align: left;
+}
+
+/* 11. ASIDE */
+aside {
+    background-color: #fffef5;
+    border: 1px dashed #d4c4a8;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    position: relative;
+    font-size: 15px;
+}
+
+aside::before {
+    content: "💡";
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    background: #fffef5;
+    padding: 2px;
+    font-size: 18px;
+}
+
+aside p {
+    margin: 0;
+    color: #6b5b5a;
+    font-style: italic;
+}
+
+/* 12. ARTICLE FOOTER */
+article footer {
+    background: none;
+    border: none;
+    padding: 15px 0 0 0;
+    margin-top: 15px;
+    text-align: right;
+    border-top: 1px dotted #e0d5c7;
+    font-size: 13px;
+    color: #9a8b7a;
+}
+
+article footer p {
+    color: #9a8b7a;
+    margin: 0;
+}
+
+/* 13. PAGE FOOTER */
+footer {
+    background-color: #f5f0e8;
+    color: #7a6b5a;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-top: 1px solid #e0d5c7;
+    font-size: 14px;
+}
+
+footer p {
+    color: #7a6b5a;
+    margin: 0;
+    font-style: italic;
+}
+
+/* 14. EMPHASIS */
+b, strong {
+    color: #c75b39;
+    font-weight: normal;
+    border-bottom: 1px dotted #c75b39;
+}
+
+em, i {
+    color: #5a7d5a;
+    font-style: italic;
+}
